@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Inventory\Model\Source\Command\GetInterface">
+        <plugin name="YireoTraining_InventorySourceShowAttribute::AddShowAttributeToSourceGet"
+                type="YireoTraining\InventorySourceShowAttribute\Plugin\AddShowAttributeToSourceGet"/>
+    </type>
+
+    <type name="Magento\Inventory\Model\Source\Command\SaveInterface">
+        <plugin name="YireoTraining_InventorySourceShowAttribute::AddShowAttributeToSourceSave"
+                type="YireoTraining\InventorySourceShowAttribute\Plugin\AddShowAttributeToSourceSave"/>
+    </type>
+
+    <type name="Magento\Inventory\Model\Source\Command\GetListInterface">
+        <plugin name="YireoTraining_InventorySourceShowAttribute::AddShowAttributeToSourceGetList"
+                type="YireoTraining\InventorySourceShowAttribute\Plugin\AddShowAttributeToSourceGetList"/>
+    </type>
+</config>
